@@ -1791,3 +1791,48 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.footer-copy a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-copy a:hover {
+  opacity: 1;
+}
+
+.divider {
+  margin: 0 8px;
+  opacity: 0.4;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom-links {
+    margin-top: 10px;
+  }
+}
